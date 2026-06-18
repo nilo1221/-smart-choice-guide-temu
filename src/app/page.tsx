@@ -116,6 +116,25 @@ const mockDeals = [
     viewCount: 980,
     createdAt: new Date(Date.now() - 432000000).toISOString(),
   },
+  {
+    id: '7',
+    title: 'Scarpe Casual Slip-on Uomo',
+    description: 'Scarpe casual da uomo con slip-on, traforate, traspiranti, leggere, comode, per passeggiate all&apos;aperto e pesca',
+    originalPrice: 8.21,
+    discountPrice: 0.70,
+    discountPercentage: 91,
+    affiliateLink: 'https://temu.to/k/e6gpvkeigif',
+    imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop',
+    storeName: 'Temu',
+    storeSlug: 'temu',
+    categoryName: 'Moda',
+    categorySlug: 'moda',
+    categoryIcon: '👕',
+    voteCount: 87,
+    viewCount: 450,
+    createdAt: new Date().toISOString(),
+    isFeatured: true,
+  },
 ]
 
 export default function Home() {
