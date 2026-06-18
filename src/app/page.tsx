@@ -135,6 +135,25 @@ const mockDeals = [
     createdAt: new Date().toISOString(),
     isFeatured: true,
   },
+  {
+    id: '8',
+    title: 'Set di 2 Leggings Capri Primavera/Estate',
+    description: 'Pantaloni Capri Casual, Pantaloni Stampati Aderenti da Donna',
+    originalPrice: 8.32,
+    discountPrice: 1.08,
+    discountPercentage: 87,
+    affiliateLink: 'https://temu.to/k/eul2yodhopz',
+    imageUrl: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&h=300&fit=crop',
+    storeName: 'Temu',
+    storeSlug: 'temu',
+    categoryName: 'Moda',
+    categorySlug: 'moda',
+    categoryIcon: '👕',
+    voteCount: 45,
+    viewCount: 280,
+    createdAt: new Date().toISOString(),
+    isFeatured: true,
+  },
 ]
 
 export default function Home() {
