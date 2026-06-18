@@ -59,12 +59,20 @@ export default function DealCard({
       <CardHeader className="p-0">
         {imageUrl && (
           <div className="relative h-48 w-full bg-gray-100">
-            <Image
-              src={imageUrl}
-              alt={title}
-              fill
-              className="object-cover"
-            />
+            {imageUrl.startsWith('/') ? (
+              <img
+                src={imageUrl}
+                alt={title}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <Image
+                src={imageUrl}
+                alt={title}
+                fill
+                className="object-cover"
+              />
+            )}
             {discount && (
               <Badge className="absolute top-2 right-2 bg-orange-500 text-white text-lg font-bold">
                 -{discount}%

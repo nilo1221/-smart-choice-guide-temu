@@ -203,7 +203,7 @@ const mockDeals = [
     discountPrice: 1.34,
     discountPercentage: 84,
     affiliateLink: 'https://temu.to/k/evpkfqgspm4',
-    imageUrl: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=600&fit=crop',
+    imageUrl: '/coprimoto-oxford.png',
     storeName: 'Temu',
     storeSlug: 'temu',
     categoryName: 'Auto e Moto',
@@ -251,13 +251,21 @@ export default function DealPage({ params }: { params: { id: string } }) {
         {/* Image Section */}
         <div className="relative rounded-2xl overflow-hidden bg-gray-100 aspect-square">
           {deal.imageUrl && (
-            <Image
-              src={deal.imageUrl}
-              alt={deal.title}
-              fill
-              className="object-cover"
-              priority
-            />
+            deal.imageUrl.startsWith('/') ? (
+              <img
+                src={deal.imageUrl}
+                alt={deal.title}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <Image
+                src={deal.imageUrl}
+                alt={deal.title}
+                fill
+                className="object-cover"
+                priority
+              />
+            )
           )}
           {discount && (
             <Badge className="absolute top-4 right-4 bg-orange-500 text-white text-xl font-bold px-4 py-2">
