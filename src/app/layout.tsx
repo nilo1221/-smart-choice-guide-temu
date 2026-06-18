@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://smart-choice-guide-temu.vercel.app'),
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   openGraph: {
     title: "Smart Choice Guide - I Migliori Buoni e Offerte Italiane",
     description: "La community italiana di buoni e offerte. Trova le migliori promozioni e risparmia sui tuoi acquisti.",
