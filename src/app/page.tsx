@@ -218,21 +218,41 @@ export default function Home() {
 
       {/* Temu Affiliate Code Banner */}
       <div className="mb-8 rounded-lg border-2 border-orange-500 bg-orange-50 p-6">
-        <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
-          <div className="flex-1">
-            <h2 className="mb-2 text-xl font-bold text-orange-800">
-              Codice Affiliato Temu Esclusivo
-            </h2>
-            <p className="text-orange-700">
-              Usa il codice <span className="font-bold">alc729848</span> per ottenere il 30% di sconto sul tuo primo ordine!
-            </p>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+            <div className="flex-1">
+              <h2 className="mb-2 text-xl font-bold text-orange-800">
+                Codice Affiliato Temu Esclusivo
+              </h2>
+              <p className="text-orange-700">
+                Usa il codice <span className="font-bold">alc729848</span> per ottenere il 30% di sconto sul tuo primo ordine!
+              </p>
+            </div>
+            <button
+              onClick={() => navigator.clipboard.writeText('alc729848')}
+              className="rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-600"
+            >
+              Copia Codice
+            </button>
           </div>
-          <button
-            onClick={() => navigator.clipboard.writeText('alc729848')}
-            className="rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-600"
-          >
-            Copia Codice
-          </button>
+          <div className="border-t border-orange-200 pt-4">
+            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+              <div className="flex-1">
+                <h3 className="mb-2 text-lg font-bold text-orange-800">
+                  💥 Codice Flash: alb888601
+                </h3>
+                <p className="text-orange-700">
+                  Sblocca i prezzi bassi segreti! 👉 <a href="https://temu.to/k/emwo7sl9k34" target="_blank" rel="noopener noreferrer" className="underline font-bold">Attiva ora</a>
+                </p>
+              </div>
+              <button
+                onClick={() => navigator.clipboard.writeText('alb888601')}
+                className="rounded-lg bg-red-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-red-600"
+              >
+                Copia Codice
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
