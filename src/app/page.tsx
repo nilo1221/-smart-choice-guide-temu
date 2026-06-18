@@ -222,10 +222,10 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
             <div className="flex-1">
               <h2 className="mb-2 text-xl font-bold text-orange-800">
-                Codice Affiliato Temu Esclusivo
+                30% di Sconto - Nuovo Utente
               </h2>
               <p className="text-orange-700">
-                Usa il codice <span className="font-bold">alc729848</span> per ottenere il 30% di sconto sul tuo primo ordine!
+                Codice: <span className="font-bold">alc729848</span> | 👉 <a href="https://temu.to/k/em1zjzvro9d" target="_blank" rel="noopener noreferrer" className="underline font-bold">Pacchetto Buoni 100€</a>
               </p>
             </div>
             <button
@@ -239,10 +239,28 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
               <div className="flex-1">
                 <h3 className="mb-2 text-lg font-bold text-orange-800">
-                  💥 Codice Flash: alb888601
+                  🎁 0€ Regali - Solo App
                 </h3>
                 <p className="text-orange-700">
-                  Sblocca i prezzi bassi segreti! 👉 <a href="https://temu.to/k/emwo7sl9k34" target="_blank" rel="noopener noreferrer" className="underline font-bold">Attiva ora</a>
+                  Codice: <span className="font-bold">alc841951</span> | 👉 <a href="https://temu.to/k/ee88con1vod" target="_blank" rel="noopener noreferrer" className="underline font-bold">Attiva ora</a>
+                </p>
+              </div>
+              <button
+                onClick={() => navigator.clipboard.writeText('alc841951')}
+                className="rounded-lg bg-green-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-green-600"
+              >
+                Copia Codice
+              </button>
+            </div>
+          </div>
+          <div className="border-t border-orange-200 pt-4">
+            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+              <div className="flex-1">
+                <h3 className="mb-2 text-lg font-bold text-orange-800">
+                  💥 Offerta Esclusiva - Nuovo Utente
+                </h3>
+                <p className="text-orange-700">
+                  Codice: <span className="font-bold">alb888601</span> | 👉 <a href="https://temu.to/k/emwo7sl9k34" target="_blank" rel="noopener noreferrer" className="underline font-bold">Prezzi bassi segreti</a>
                 </p>
               </div>
               <button
@@ -251,6 +269,18 @@ export default function Home() {
               >
                 Copia Codice
               </button>
+            </div>
+          </div>
+          <div className="border-t border-orange-200 pt-4">
+            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+              <div className="flex-1">
+                <h3 className="mb-2 text-lg font-bold text-orange-800">
+                  💰 Risparmia alla Grande - Tutti gli Utenti
+                </h3>
+                <p className="text-orange-700">
+                  👉 <a href="https://temu.to/k/em1zjzvro9d" target="_blank" rel="noopener noreferrer" className="underline font-bold">Scopri le offerte</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
