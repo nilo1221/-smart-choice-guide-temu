@@ -173,6 +173,25 @@ const mockDeals = [
     createdAt: new Date().toISOString(),
     isFeatured: true,
   },
+  {
+    id: '10',
+    title: 'Giocattolo Stuzzicagatto a Scuotimento Uccellino',
+    description: 'Aggeggio interattivo per alleviare la noia degli animali domestici, si scuote automaticamente e produce suoni, realizzato in fibra di poliestere morbida e resistente ai morsi, adatto per esercizio e attività indoor',
+    originalPrice: 8.23,
+    discountPrice: 0.78,
+    discountPercentage: 91,
+    affiliateLink: 'https://temu.to/k/elgtwuybmou',
+    imageUrl: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop',
+    storeName: 'Temu',
+    storeSlug: 'temu',
+    categoryName: 'Giocattoli',
+    categorySlug: 'giocattoli',
+    categoryIcon: '🧸',
+    voteCount: 38,
+    viewCount: 210,
+    createdAt: new Date().toISOString(),
+    isFeatured: true,
+  },
 ]
 
 export default function Home() {
