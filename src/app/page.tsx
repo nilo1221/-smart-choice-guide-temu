@@ -1,3 +1,5 @@
+'use client'
+
 import DealCard from '@/components/DealCard'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
