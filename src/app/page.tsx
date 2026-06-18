@@ -192,6 +192,25 @@ const mockDeals = [
     createdAt: new Date().toISOString(),
     isFeatured: true,
   },
+  {
+    id: '11',
+    title: 'Coprimoto Oxford di Alta Qualità',
+    description: 'Protezione per tutte le stagioni, adatto a vari modelli di veicoli, resistente, nero, sicuro per il deposito della moto, funzione di sicurezza riflettente, copertura resistente ai raggi UV',
+    originalPrice: 8.40,
+    discountPrice: 1.34,
+    discountPercentage: 84,
+    affiliateLink: 'https://temu.to/k/evpkfqgspm4',
+    imageUrl: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=400&h=300&fit=crop',
+    storeName: 'Temu',
+    storeSlug: 'temu',
+    categoryName: 'Auto e Moto',
+    categorySlug: 'auto-moto',
+    categoryIcon: '🏍️',
+    voteCount: 156,
+    viewCount: 890,
+    createdAt: new Date().toISOString(),
+    isFeatured: true,
+  },
 ]
 
 export default function Home() {
