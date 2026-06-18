@@ -198,89 +198,95 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <div className="mb-8 rounded-lg bg-gradient-to-r from-orange-500 to-red-600 p-8 text-white">
-        <h1 className="mb-2 text-3xl font-bold">Smart Choice Guide</h1>
-        <p className="mb-4 text-lg">
-          La community italiana di buoni e offerte. Trova le migliori promozioni e risparmia sui tuoi acquisti.
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <Badge variant="secondary" className="bg-white text-orange-600">
-            {mockDeals.length} Offerte Attive
-          </Badge>
-          <Badge variant="secondary" className="bg-white text-orange-600">
-            10+ Categorie
-          </Badge>
-          <Badge variant="secondary" className="bg-white text-orange-600">
-            Community Attiva
-          </Badge>
+      <div className="mb-8 rounded-2xl bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 p-8 text-white shadow-2xl relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="relative z-10">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm">
+              <span className="text-2xl">🎯</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Smart Choice Guide</h1>
+          </div>
+          <p className="mb-6 text-xl text-white/90 max-w-2xl">
+            La community italiana di buoni e offerte. Trova le migliori promozioni e risparmia sui tuoi acquisti.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Badge variant="secondary" className="bg-white/20 backdrop-blur-sm text-white border-white/30 px-4 py-2 text-sm">
+              🔥 {mockDeals.length} Offerte Attive
+            </Badge>
+            <Badge variant="secondary" className="bg-white/20 backdrop-blur-sm text-white border-white/30 px-4 py-2 text-sm">
+              📦 10+ Categorie
+            </Badge>
+            <Badge variant="secondary" className="bg-white/20 backdrop-blur-sm text-white border-white/30 px-4 py-2 text-sm">
+              👥 Community Attiva
+            </Badge>
+          </div>
         </div>
       </div>
 
       {/* Temu Affiliate Code Banner */}
-      <div className="mb-8 rounded-lg border-2 border-orange-500 bg-orange-50 p-6">
+      <div className="mb-8 rounded-2xl bg-gradient-to-br from-orange-50 to-red-50 p-6 shadow-lg border border-orange-200">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
             <div className="flex-1">
-              <h2 className="mb-2 text-xl font-bold text-orange-800">
+              <h2 className="mb-2 text-lg font-bold text-orange-800 flex items-center gap-2">
+                <span className="text-2xl">🎉</span>
                 30% di Sconto - Nuovo Utente
               </h2>
-              <p className="text-orange-700">
-                Codice: <span className="font-bold">alc729848</span> | 👉 <a href="https://temu.to/k/em1zjzvro9d" target="_blank" rel="noopener noreferrer" className="underline font-bold">Pacchetto Buoni 100€</a>
+              <p className="text-gray-700">
+                Codice: <span className="font-bold text-orange-600">alc729848</span> | 👉 <a href="https://temu.to/k/em1zjzvro9d" target="_blank" rel="noopener noreferrer" className="underline font-bold text-orange-600 hover:text-orange-700">Pacchetto Buoni 100€</a>
               </p>
             </div>
             <button
               onClick={() => navigator.clipboard.writeText('alc729848')}
-              className="rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-orange-600"
+              className="rounded-xl bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 font-semibold text-white transition-all hover:scale-105 hover:shadow-lg"
             >
               Copia Codice
             </button>
           </div>
-          <div className="border-t border-orange-200 pt-4">
-            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
-              <div className="flex-1">
-                <h3 className="mb-2 text-lg font-bold text-orange-800">
-                  🎁 0€ Regali - Solo App
-                </h3>
-                <p className="text-orange-700">
-                  Codice: <span className="font-bold">alc841951</span> | 👉 <a href="https://temu.to/k/ee88con1vod" target="_blank" rel="noopener noreferrer" className="underline font-bold">Attiva ora</a>
-                </p>
-              </div>
-              <button
-                onClick={() => navigator.clipboard.writeText('alc841951')}
-                className="rounded-lg bg-green-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-green-600"
-              >
-                Copia Codice
-              </button>
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex-1">
+              <h3 className="mb-2 text-lg font-bold text-green-800 flex items-center gap-2">
+                <span className="text-2xl">🎁</span>
+                0€ Regali - Solo App
+              </h3>
+              <p className="text-gray-700">
+                Codice: <span className="font-bold text-green-600">alc841951</span> | 👉 <a href="https://temu.to/k/ee88con1vod" target="_blank" rel="noopener noreferrer" className="underline font-bold text-green-600 hover:text-green-700">Attiva ora</a>
+              </p>
             </div>
+            <button
+              onClick={() => navigator.clipboard.writeText('alc841951')}
+              className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-3 font-semibold text-white transition-all hover:scale-105 hover:shadow-lg"
+            >
+              Copia Codice
+            </button>
           </div>
-          <div className="border-t border-orange-200 pt-4">
-            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
-              <div className="flex-1">
-                <h3 className="mb-2 text-lg font-bold text-orange-800">
-                  💥 Offerta Esclusiva - Nuovo Utente
-                </h3>
-                <p className="text-orange-700">
-                  Codice: <span className="font-bold">alb888601</span> | 👉 <a href="https://temu.to/k/emwo7sl9k34" target="_blank" rel="noopener noreferrer" className="underline font-bold">Prezzi bassi segreti</a>
-                </p>
-              </div>
-              <button
-                onClick={() => navigator.clipboard.writeText('alb888601')}
-                className="rounded-lg bg-red-500 px-6 py-3 font-semibold text-white transition-colors hover:bg-red-600"
-              >
-                Copia Codice
-              </button>
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex-1">
+              <h3 className="mb-2 text-lg font-bold text-red-800 flex items-center gap-2">
+                <span className="text-2xl">💥</span>
+                Offerta Esclusiva - Nuovo Utente
+              </h3>
+              <p className="text-gray-700">
+                Codice: <span className="font-bold text-red-600">alb888601</span> | 👉 <a href="https://temu.to/k/emwo7sl9k34" target="_blank" rel="noopener noreferrer" className="underline font-bold text-red-600 hover:text-red-700">Prezzi bassi segreti</a>
+              </p>
             </div>
+            <button
+              onClick={() => navigator.clipboard.writeText('alb888601')}
+              className="rounded-xl bg-gradient-to-r from-red-500 to-pink-500 px-6 py-3 font-semibold text-white transition-all hover:scale-105 hover:shadow-lg"
+            >
+              Copia Codice
+            </button>
           </div>
-          <div className="border-t border-orange-200 pt-4">
-            <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
-              <div className="flex-1">
-                <h3 className="mb-2 text-lg font-bold text-orange-800">
-                  💰 Risparmia alla Grande - Tutti gli Utenti
-                </h3>
-                <p className="text-orange-700">
-                  👉 <a href="https://temu.to/k/em1zjzvro9d" target="_blank" rel="noopener noreferrer" className="underline font-bold">Scopri le offerte</a>
-                </p>
-              </div>
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex-1">
+              <h3 className="mb-2 text-lg font-bold text-purple-800 flex items-center gap-2">
+                <span className="text-2xl">💰</span>
+                Risparmia alla Grande - Tutti gli Utenti
+              </h3>
+              <p className="text-gray-700">
+                👉 <a href="https://temu.to/k/em1zjzvro9d" target="_blank" rel="noopener noreferrer" className="underline font-bold text-purple-600 hover:text-purple-700">Scopri le offerte</a>
+              </p>
             </div>
           </div>
         </div>

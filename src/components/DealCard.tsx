@@ -55,7 +55,7 @@ export default function DealCard({
   const discount = calculateDiscount()
 
   return (
-    <Card className={`overflow-hidden hover:shadow-lg transition-shadow ${isFeatured ? 'border-orange-500 border-2' : ''}`}>
+    <Card className={`overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer ${isFeatured ? 'border-orange-500 border-2' : ''}`}>
       <CardHeader className="p-0">
         {imageUrl && (
           <div className="relative h-48 w-full bg-gray-100">
