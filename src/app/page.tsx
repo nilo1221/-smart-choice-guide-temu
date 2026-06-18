@@ -154,6 +154,25 @@ const mockDeals = [
     createdAt: new Date().toISOString(),
     isFeatured: true,
   },
+  {
+    id: '9',
+    title: '4 pezzi Gilet Sportivo Estivo da Uomo',
+    description: 'T-Shirt Senza Maniche Modellante Ionica, Top Senza Maniche Aderente Traspirante ad Asciugatura Rapida per Fitness da Uomo, Gilet Elastico Aderente per Allenamento, Gilet Compresso per Modellare il Corpo Perfetto per Palestra, Corsa, Basket e Attività all&apos;aperto',
+    originalPrice: 8.41,
+    discountPrice: 1.38,
+    discountPercentage: 84,
+    affiliateLink: 'https://temu.to/k/e8mmewwmxa5',
+    imageUrl: 'https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400&h=300&fit=crop',
+    storeName: 'Temu',
+    storeSlug: 'temu',
+    categoryName: 'Moda',
+    categorySlug: 'moda',
+    categoryIcon: '👕',
+    voteCount: 52,
+    viewCount: 320,
+    createdAt: new Date().toISOString(),
+    isFeatured: true,
+  },
 ]
 
 export default function Home() {
