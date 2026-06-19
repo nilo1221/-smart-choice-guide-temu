@@ -387,6 +387,29 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Plant a Tree Banner */}
+      <div className="mb-8 rounded-2xl bg-gradient-to-br from-green-50 to-emerald-50 p-6 shadow-lg border border-green-200">
+        <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+          <div className="flex-1">
+            <h3 className="mb-2 text-lg font-bold text-green-800 flex items-center gap-2">
+              <span className="text-2xl">🌳</span>
+              Programma &ldquo;Pianta un Albero&rdquo; con Temu
+            </h3>
+            <p className="text-gray-700 text-sm">
+              Temu ha finanziato <span className="font-bold text-green-600">26.779.485 alberi</span> in partnership con Trees for the Future. Dona 0,31€ per piantare un albero durante i tuoi acquisti.
+            </p>
+          </div>
+          <a
+            href="https://temu.to/k/em1zjzvro9d"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-3 font-semibold text-white transition-all hover:scale-105 hover:shadow-lg"
+          >
+            Scopri di più
+          </a>
+        </div>
+      </div>
+
       {/* Deals Section */}
       <Tabs defaultValue="hot" className="space-y-6">
         <TabsList className="grid w-full grid-cols-3 md:w-auto md:grid-cols-4">
