@@ -249,6 +249,25 @@ const mockDeals = [
     createdAt: new Date().toISOString(),
     isFeatured: true,
   },
+  {
+    id: '14',
+    title: 'Scarpe Sportive Casual Uomo con Altezza Aggiunta',
+    description: 'Scarpe sportive casual traspiranti con altezza aggiunta, ideali per attività all&apos;aperto, taglia grande, leggere e comode, adatte per allenamento e corsa',
+    originalPrice: 25.00,
+    discountPrice: 3.50,
+    discountPercentage: 86,
+    affiliateLink: 'https://temu.to/k/egc4dkb7lcv',
+    imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop',
+    storeName: 'Temu',
+    storeSlug: 'temu',
+    categoryName: 'Sport',
+    categorySlug: 'sport',
+    categoryIcon: '⚽',
+    voteCount: 45,
+    viewCount: 290,
+    createdAt: new Date().toISOString(),
+    isFeatured: true,
+  },
 ]
 
 export default function Home() {
