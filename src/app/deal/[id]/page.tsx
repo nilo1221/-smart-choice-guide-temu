@@ -271,6 +271,25 @@ const mockDeals = [
     createdAt: new Date().toISOString(),
     isFeatured: true,
   },
+  {
+    id: '15',
+    title: 'Scanner Diagnostico OBD2 Avanzato per Auto',
+    description: 'Scanner diagnostico OBD2 avanzato per auto, 10 lingue, compatibile con la maggior parte dei veicoli prodotti dopo il 1996',
+    originalPrice: 10.63,
+    discountPrice: 1.44,
+    discountPercentage: 86,
+    affiliateLink: 'https://temu.to/k/eifj2sykiuf',
+    imageUrl: '/product-15.png',
+    storeName: 'Temu',
+    storeSlug: 'temu',
+    categoryName: 'Auto e Moto',
+    categorySlug: 'auto-moto',
+    categoryIcon: '🏍️',
+    voteCount: 52,
+    viewCount: 310,
+    createdAt: new Date().toISOString(),
+    isFeatured: true,
+  },
 ]
 
 export default function DealPage({ params }: { params: { id: string } }) {
